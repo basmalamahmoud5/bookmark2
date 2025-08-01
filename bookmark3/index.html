@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>bookmarkkkkkkk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <!-- ------=======google font=======--------- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+  <!-- ------=======font awesome=======--------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- ------=======boot strap=======--------- -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- ------=======main styling=======--------- -->
+  <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+
+
+    <section id="bookmark" class=" py-5 position-relative">
+        <div class="container  d-flex flex-column justify-content-center align-items-center">
+                <h1 class="py-2 position-relative hea">Bookmarker</h1>
+                <div class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2 class="text-center">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site_name py-2 w-100">
+                    <label for="bookmark_name" class="pb-2  fw-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmark_name">
+                </div>
+                <div class="site_url py-2 pb-2 w-100">
+                    <label for="bookmark_url" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>
+                            site_url
+                    </label>
+                    <input type="url" placeholder="Website url" class="form-control" id="bookmark_url">
+                </div>
+                <div class="btn flex-column py-3 d-flex justify-content-between align-items-center">
+                    <button onclick="add_site();" class="btn btn-danger color-or px-5" type="submit">Submit</button>
+                </div>
+                
+            </div>
+            <table class="text-center bg-light mt-4 table">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">Index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableContent">
+                
+                </tbody>
+            </table>
+        </div>
+
+        <div class="box position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center d-none">
+            <div class="box-conent bg-white p-4 rounded-2 shadow-lg">
+            <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+                <div class="circles d-flex">
+                <span class="rounded-circle me-2"></span>
+                <span class="rounded-circle me-2"></span>
+                <span class="rounded-circle me-2"></span>
+                </div>
+                <button class="btn border-0" id="closeIcon">
+                <i class="fa-solid fa-xmark close fs-3"></i>
+                </button>
+            </header>
+            <p class="m-0 pb-2">
+                Site Name or Url is not valid, Please follow the rules below :
+            </p>
+            <ol class="rules list-unstyled m-0">
+                <li>
+                    <i class="fa-regular fa-circle-right p-2"></i>Site name mustcontain at least 3 characters
+                </li>
+                <li>
+                <i class="fa-regular fa-circle-right p-2"></i>Site URL must be avalid one</li>
+            </ol>
+            </div >
+        </div >
+    </section>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
